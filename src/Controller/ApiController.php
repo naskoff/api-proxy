@@ -28,7 +28,7 @@ final class ApiController extends AbstractController
     }
 
     /**
-     * @Route("/{route}", name="api_proxy", methods={"GET", "POST"})
+     * @Route("/api/{route}", name="api_proxy", methods={"GET", "POST"})
      *
      * @param Request $request
      * @param string $route
