@@ -59,6 +59,10 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "build-and-run": [
+            "docker build . -t fake-api-app",
+            "docker run -d -p 8443:80 --name fake-api -v \"$PWD\":/var/www/html fake-api-app"
         ]
     },
     "conflict": {
