@@ -43,7 +43,7 @@ final class ApiController extends AbstractController
      */
     public function __invoke(Request $request, string $route): JsonResponse
     {
-        $data = $this->client->request($request->getMethod(), 'https://dummyjson.com/' . $route, [
+        $data = $this->client->request($request->getMethod(), 'https://studentski.bidlag.com/api/' . $route, [
             'query' => $request->query->all(),
         ])->toArray();
 
